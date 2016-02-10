@@ -1,0 +1,1490 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"robus",
+				"robust_online_trend_cycle"
+			],
+			[
+				"robust_on",
+				"robust_online_trend_cycle_finalizer"
+			],
+			[
+				"run_cycle_",
+				"run_cycle_sample_median_serial"
+			],
+			[
+				"robust_onl",
+				"robust_online_trend_cycle_worker"
+			],
+			[
+				"LIFT_",
+				"LIFT_DEVICE_COMPILATION"
+			],
+			[
+				"linear_regression_",
+				"linear_regression_tests_register"
+			],
+			[
+				"fast_",
+				"fast_robust_fit_trend_cycle__maxiter"
+			],
+			[
+				"oc_cal",
+				"oc_calibration"
+			],
+			[
+				"globa",
+				"global_params"
+			],
+			[
+				"adju",
+				"adjusted_params"
+			],
+			[
+				"neg_minus_floor_filte",
+				"neg_minus_floor_filtered_settled"
+			],
+			[
+				"vmsw",
+				"vmsw_sync"
+			],
+			[
+				"use",
+				"use_mmap"
+			],
+			[
+				"remap_",
+				"remap_key_B"
+			],
+			[
+				"remap",
+				"remap_key_A"
+			],
+			[
+				"oc_cali",
+				"oc_calibration_header"
+			],
+			[
+				"output",
+				"output_file"
+			],
+			[
+				"experiment_phase_oc",
+				"experiment_phase_oc_calibration_vmsw"
+			],
+			[
+				"experiment_phase_oc_calib",
+				"experiment_phase_oc_calibration_vmzero"
+			],
+			[
+				"base_",
+				"base_experiment_directory"
+			],
+			[
+				"detect",
+				"detect_experiment_contents"
+			],
+			[
+				"bas",
+				"base_path"
+			],
+			[
+				"overshoot",
+				"overshoot_dt"
+			],
+			[
+				"linreg_work",
+				"linreg_worker_type"
+			],
+			[
+				"anno",
+				"annotation_id"
+			],
+			[
+				"bright_med",
+				"bright_median_settled"
+			],
+			[
+				"gather_cel",
+				"gather_cell_percentile_min_max"
+			],
+			[
+				"desc_",
+				"desc_cycle_median_dark"
+			],
+			[
+				"unit_c",
+				"unit_conversions::mv_conversion_factor"
+			],
+			[
+				"unit_conversions",
+				"unit_conversions::mv_conversion_factor"
+			],
+			[
+				"dark_meid",
+				"dark_median_settled"
+			],
+			[
+				"oc_calib",
+				"oc_calibration_data"
+			],
+			[
+				"unit_convers",
+				"unit_conversions::adc_conversion_factor"
+			],
+			[
+				"dark_da",
+				"dark_data_settled"
+			],
+			[
+				"desc_cyc",
+				"desc_cycle_median_dark_settled"
+			],
+			[
+				"oc_calibra",
+				"oc_calibration_parameters"
+			],
+			[
+				"firs",
+				"first_settled_cycle"
+			],
+			[
+				"first_",
+				"first_sample_flag"
+			],
+			[
+				"shared",
+				"shared_memory_size"
+			],
+			[
+				"samples_per",
+				"samples_per_cycle"
+			],
+			[
+				"scrat",
+				"scratch_space"
+			],
+			[
+				"scratch_",
+				"scratch_space"
+			],
+			[
+				"scrath",
+				"scratch_space"
+			],
+			[
+				"ui",
+				"uint8"
+			],
+			[
+				"gather",
+				"gather_cell_cycle_median"
+			],
+			[
+				"frame_",
+				"frame_size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 1364,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sdftoy.sublime-project",
+			"settings":
+			{
+				"buffer_size": 703,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "release",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"drosophila release",
+					""
+				],
+				[
+					"drosophila release",
+					"clean"
+				]
+			],
+			[
+				"drosophila release",
+				""
+			]
+		],
+		[
+			[
+				[
+					"release",
+					""
+				],
+				[
+					"release",
+					"sequential"
+				],
+				[
+					"release",
+					"clean"
+				]
+			],
+			[
+				"release",
+				""
+			]
+		],
+		[
+			[
+				[
+					"wilkins",
+					""
+				],
+				[
+					"wilkins",
+					"release"
+				],
+				[
+					"wilkins",
+					"release sequential"
+				],
+				[
+					"wilkins",
+					"clean"
+				]
+			],
+			[
+				"wilkins",
+				""
+			]
+		],
+		[
+			[
+				[
+					"wilkins debug",
+					""
+				],
+				[
+					"wilkins debug",
+					"sequential"
+				],
+				[
+					"wilkins debug",
+					"clean"
+				],
+				[
+					"wilkins release",
+					""
+				],
+				[
+					"wilkins release",
+					"sequential"
+				],
+				[
+					"wilkins release",
+					"clean"
+				]
+			],
+			[
+				"wilkins release",
+				""
+			]
+		],
+		[
+			[
+				[
+					"wilkins debug",
+					""
+				],
+				[
+					"wilkins debug",
+					"sequential"
+				],
+				[
+					"wilkins debug",
+					"clean"
+				],
+				[
+					"wilkins release",
+					""
+				],
+				[
+					"wilkins release",
+					"sequential"
+				],
+				[
+					"wilkins release",
+					"clean"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/CUDA C++/cuda-c++.sublime-build",
+					""
+				],
+				[
+					"Packages/CUDA C++/cuda-c++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"wilkins release",
+				""
+			]
+		],
+		[
+			[
+				[
+					"wilkins debug",
+					"clean"
+				],
+				[
+					"wilkins release",
+					"clean"
+				]
+			],
+			[
+				"wilkins release",
+				"clean"
+			]
+		],
+		[
+			[
+				[
+					"wilkins release",
+					""
+				],
+				[
+					"wilkins release",
+					"sequential"
+				],
+				[
+					"wilkins release",
+					"clean"
+				]
+			],
+			[
+				"wilkins release",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 93.0,
+		"last_filter": "remove",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"glue ",
+				"Glue - Launch"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control:in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 357.0,
+		"history":
+		[
+			"glue new",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rapososn/sdftoy"
+	],
+	"file_history":
+	[
+		"/Users/rapososn/sdftoy/modules/glfw/src/cocoa_monitor.m",
+		"/Users/rapososn/sdftoy/sdftoy.sublime-project",
+		"/Users/rapososn/snail/input/ubf_data.cu",
+		"/Users/rapososn/snail/modules/lift/contrib/tbb/examples/parallel_for/tachyon/src/types.h",
+		"/Users/rapososn/snail/modules/lift/lift/memory/pointer.h",
+		"/Users/rapososn/snail/snail.sublime-project",
+		"/Users/rapososn/snail/unit-tests/test_list.cu",
+		"/Users/rapososn/snail/primitives/sample_loader.h",
+		"/Users/rapososn/snail/input/ubf_data.h",
+		"/Users/rapososn/snail/primitives/small_median.h",
+		"/Users/rapososn/snail/primitives/cycle_median.h",
+		"/Users/rapososn/snail/primitives/cycle_sample_median.h",
+		"/Users/rapososn/snail/unit-tests/cycle_median.cu",
+		"/Users/rapososn/snail/unit-tests/CMakeLists.txt",
+		"/Users/rapososn/snail/CMakeLists.txt",
+		"/Users/rapososn/snail/unit-tests/small_medians.cu",
+		"/Users/rapososn/snail/oc_calibration/oc_calibration.cu",
+		"/Users/rapososn/snail/oc_calibration/rails_fraction.cu",
+		"/Users/rapososn/snail/oc_calibration/overshoot.cu",
+		"/Users/rapososn/snail/common/pipeline_parameters.h",
+		"/Users/rapososn/snail/oc_calibration/fast_fit_trend_cycle.h",
+		"/Users/rapososn/snail/oc_calibration/robust_online_trend_cycle.cu",
+		"/Users/rapososn/snail/oc_calibration/decay_magnitude.cu",
+		"/Users/rapososn/snail/oc_calibration/robust_online_trend_cycle.h",
+		"/Users/rapososn/snail/pipeline.cu",
+		"/Users/rapososn/snail/modules/lift/lift/memory/allocation.h",
+		"/Users/rapososn/snail/input/ubf_file.h",
+		"/Users/rapososn/snail/unit-tests/linear_regression.cu",
+		"/Users/rapososn/snail/modules/lift/lift/tests/harness.h",
+		"/Users/rapososn/snail/modules/lift/lift/decorators.h",
+		"/Users/rapososn/snail/modules/lift/src/CMakeLists.txt",
+		"/Users/rapososn/snail/modules/lift/tests/CMakeLists.txt",
+		"/Users/rapososn/snail/oc_calibration/fast_fit_trend_cycle.cu",
+		"/Users/rapososn/snail/scratch/oc_calibration-per-rep/oc_calibration.h",
+		"/Users/rapososn/snail/oc_calibration/oc_calibration.h",
+		"/Users/rapososn/snail/oc_calibration/timers.h",
+		"/Users/rapososn/snail/oc_calibration/params.h",
+		"/Users/rapososn/snail/pipeline.h",
+		"/Users/rapososn/snail/oc_calibration/vmzero/vmzero_pipeline.h",
+		"/Users/rapososn/snail/oc_calibration/vmzero/vmzero_pipeline.cu",
+		"/Users/rapososn/snail/output/annotations_writer.h",
+		"/Users/rapososn/snail/output/annotation_types.h",
+		"/Users/rapososn/snail/oc_calibration/good_pore_detector.cu",
+		"/Users/rapososn/snail/snail.cu",
+		"/Users/rapososn/snail/input/split_cycle_data.cu",
+		"/Users/rapososn/snail/primitives/cell_mean.h",
+		"/Users/rapososn/snail/primitives/kalman.h",
+		"/Users/rapososn/snail/oc_calibration/old/good_pore_detector.cu",
+		"/Users/rapososn/snail/unit-tests/sort-benchmark.cu",
+		"/Users/rapososn/snail/input/ubf_file_set.h",
+		"/Users/rapososn/snail/oc_calibration/test.cpp",
+		"/Users/rapososn/snail/oc_calibration/old/fast_robust_fit_trend_cycle.cu",
+		"/Users/rapososn/snail/oc_calibration/fast_robust_fit_trend_cycle.cu",
+		"/Users/rapososn/snail/modules/lift/timer.h",
+		"/Users/rapososn/snail/input/filter_first_cycle_sample.cu",
+		"/Users/rapososn/snail/modules/lift/memory/cuda_allocator.h",
+		"/Users/rapososn/snail/primitives/incremental_cycle_mean.h",
+		"/Users/rapososn/snail/input/remap_raw_frame_data.cu",
+		"/Users/rapososn/snail/oc_calibration/open_channel_level.cu",
+		"/Users/rapososn/snail/oc_calibration/old/trend_cycle_decay.cu",
+		"/Users/rapososn/snail/oc_calibration/old/rails_fraction.cu",
+		"/Users/rapososn/snail/oc_calibration/old/fast_fit_trend_cycle.cu",
+		"/Users/rapososn/snail/oc_calibration/old/oc_calibration.cu",
+		"/Users/rapososn/snail/modules/lift/memory/persistent_allocation.h",
+		"/Users/rapososn/snail/modules/lift/memory/allocation.h",
+		"/Users/rapososn/snail/oc_calibration/old/oc_calibration.h",
+		"/Users/rapososn/snail/modules/lift/parallel.h",
+		"/Users/rapososn/snail/oc_calibration/old/pos_neg_oc.cu",
+		"/Users/rapososn/snail/oc_calibration/old/overshoot.cu",
+		"/Users/rapososn/snail/modules/lift/memory/pointer.h",
+		"/Users/rapososn/snail/input/ubf_file_set.cu",
+		"/Users/rapososn/snail/input/ubf_file.cu",
+		"/Users/rapososn/snail/oc_calibration/vmzero/overshoot.cu",
+		"/Users/rapososn/snail/oc_calibration/overshoot.h",
+		"/Users/rapososn/snail/oc_calibration/old/pos_median.cu",
+		"/Users/rapososn/snail/primitives/subtract_frame.h",
+		"/Users/rapososn/snail/modules/lift/memory/scoped_free.h",
+		"/Users/rapososn/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/rapososn/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/rapososn/snail/primitives/incremental_cycle_means.h",
+		"/Users/rapososn/snail/primitives/incremental_cell_mean.h",
+		"/Users/rapososn/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rapososn/snail/oc_calibration/vmzero/oc_calibration.cu",
+		"/Users/rapososn/snail/oc_calibration/vmsw/fast_fit_trend_cycle.cu",
+		"/Users/rapososn/snail/oc_calibration/vmsw/fast_fit_trend_cycle.h",
+		"/Users/rapososn/snail/oc_calibration/vmsw/vmsw_pipeline.h",
+		"/Users/rapososn/snail/oc_calibration/vmzero/fast_fit_trend_cycle.h",
+		"/Users/rapososn/snail/oc_calibration/trend_cycle_decay.cu",
+		"/Users/rapososn/snail/input/build_experiment_remap_index.cu",
+		"/Users/rapososn/snail/modules/ubf/ubf_100.h",
+		"/Users/rapososn/snail/modules/ubf/ubf_stream.h",
+		"/Users/rapososn/snail/modules/ubf/ubf_100.cpp",
+		"/Users/rapososn/snail/modules/ubf/ubf_stream.cpp",
+		"/Users/rapososn/snail/modules/ubf/doc/ubf-2.0.txt",
+		"/Users/rapososn/snail/unit-tests/means.cu",
+		"/Users/rapososn/snail/unit-tests/median.cu",
+		"/Users/rapososn/snail/oc_calibration/pos_median.cu",
+		"/Users/rapososn/snail/oc_calibration/pos_neg_decay_mag.cu",
+		"/Users/rapososn/snail/oc_calibration/pos_neg_oc.cu",
+		"/Users/rapososn/snail/primitives/cell_diff.h",
+		"/usr/local/cuda/include/thrust/system/tbb/detail/for_each.inl",
+		"/Users/rapososn/snail/primitives/cell_std.h",
+		"/Users/rapososn/snail/primitives/cell_sum.h",
+		"/Users/rapososn/snail/primitives/linear_least_squares_fit.h",
+		"/Users/rapososn/snail/primitives/median_filter.h",
+		"/Users/rapososn/snail/scratch/check_cell_shorted.cu",
+		"/Users/rapososn/snail/scratch/frame_mean.h",
+		"/Users/rapososn/snail/scratch/linear_regression.h",
+		"/Users/rapososn/snail/scratch/test_cell_shorted.cpp",
+		"/Users/rapososn/snail/primitives/cell_mean.inl",
+		"/Users/rapososn/snail/modules/ubf/ubf_100.cpp:67:2",
+		"/Users/rapososn/snail/input/experiment_directory.h",
+		"/Users/rapososn/Library/Application Support/Sublime Text 3/Packages/Search in Project/SearchInProject.sublime-settings",
+		"/Users/rapososn/Library/Application Support/Sublime Text 3/Packages/User/SearchInProject.sublime-settings",
+		"/Users/rapososn/snail/modules/lift/memory.h",
+		"/Users/rapososn/snail/input/experiment_directory.cu",
+		"/Users/rapososn/snail/common/chip_parameters.h",
+		"/Users/rapososn/snail/input/data_frame.h",
+		"/Users/rapososn/snail/input/data_frame.cu",
+		"/Users/rapososn/snail/snail.cpp",
+		"/Users/rapososn/snail/input/ubf_fileset.h",
+		"/Users/rapososn/snail/command_line.h",
+		"/Users/rapososn/snail/command_line.cpp",
+		"/Users/rapososn/snail/modules/lift/algorithms/binsearch.h",
+		"/Users/rapososn/snail/modules/lift/backends.h",
+		"/Users/rapososn/snail/modules/lift/memory/type_assignment_checks.h",
+		"/Users/rapososn/snail/modules/lift/algorithms/cuda/launch_parameters.h",
+		"/Users/rapososn/snail/modules/lift/algorithms/cuda/for_each.h"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"modules/glfw",
+			"frame",
+			"frames",
+			"frame",
+			"frame_",
+			"bright",
+			"host",
+			"bright",
+			"pipeline_data_batch",
+			"first_timestamp",
+			"first_frame",
+			"bright",
+			"trace",
+			"bright_desc",
+			"bright",
+			"run_cycle_median_serial",
+			"serial_",
+			".",
+			"[",
+			"output_serial",
+			"system",
+			"serial_test",
+			"11",
+			"46",
+			"_idx",
+			"warps_per_block",
+			".",
+			"[",
+			"]",
+			"[",
+			"]",
+			"[",
+			"i",
+			"sequence",
+			"sample_idx",
+			"249",
+			"input.samples_per_cycle()",
+			"cycle_idx",
+			"cpu_per_cycle_sample_median",
+			"cycle_median",
+			"cycle_medians",
+			"samples_per_cycle",
+			"cycle_index",
+			"samples_per_cycle",
+			"small_median_tests_register",
+			"uci_sample_loader",
+			"seed",
+			"rand_reset",
+			"median_set_index",
+			"shared_scratch_space",
+			"warps_per_block",
+			"descriptor",
+			"cell_idx",
+			"sample_loader",
+			"frame_index",
+			"30",
+			"raw_data_host",
+			"frames_per_cycle",
+			"frame_size",
+			"samples_per_cycle",
+			"frame_size",
+			"test_vector",
+			"data_cpu",
+			"host",
+			"samples_per_cycle",
+			"num_elements",
+			"input_type",
+			"gpu_per_cycle_median",
+			"cpu_per_cycle_median",
+			"num_samples",
+			"float",
+			"bright.",
+			"trend.",
+			"trend",
+			"auto",
+			"Q",
+			"bright",
+			"rail_fraction",
+			"init_rail_fraction",
+			"-static",
+			"b.",
+			")\n",
+			"a.",
+			"need_cell_remap",
+			"alloc",
+			"oc_calibration_pipeline",
+			"decay_mag_worker",
+			"open_channel",
+			"open_channel_level",
+			"compute_open_channel",
+			"channel",
+			"compute_open_channel",
+			"init_open_channel",
+			"open_channel_worker",
+			"pos_neg_oc",
+			"compute_pos_neg_oc",
+			"oc_calibration_pipeline",
+			"context.",
+			"calibration_vmzero_pipeline",
+			" override",
+			"context.",
+			"oc_calibration_vmsw_pipeline",
+			"oc_calibration_vmsw",
+			"oc_calibration_pipeline",
+			"oc_calibration_vmsw",
+			"rails",
+			"rails_fraction",
+			"compute_rails_fraction",
+			"oc_calibration_pipeline",
+			"steady",
+			"oc_calibration_pipeline",
+			"steady",
+			"steady_mean",
+			"oc_calibration_pipeline",
+			"trend",
+			"state.",
+			"descriptor.",
+			"cycle_",
+			"base_cycle_offset",
+			"state",
+			"data.",
+			"cycle_decay_state",
+			"state",
+			"load_samples",
+			"device_data",
+			"pipeline_data_batch",
+			"data_reshuffle",
+			"host_data"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"debug"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								495,
+								495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CMakeEditor/CMakeEditor.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1143,
+								1143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sdftoy.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 97.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 277.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "sdftoy.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"oc_cali",
+				"oc_calibration/oc_calibration.h"
+			],
+			[
+				"ubf_data.h",
+				"input/ubf_data.h"
+			],
+			[
+				"robu",
+				"oc_calibration/robust_online_trend_cycle.cu"
+			],
+			[
+				"cycle_sample",
+				"primitives/cycle_sample_median.h"
+			],
+			[
+				"cycle_median.h",
+				"primitives/cycle_median.h"
+			],
+			[
+				"oc_",
+				"oc_calibration/oc_calibration.h"
+			],
+			[
+				"oc_calibration.h",
+				"oc_calibration/oc_calibration.h"
+			],
+			[
+				"pipeline.h",
+				"pipeline.h"
+			],
+			[
+				"vmzero",
+				"oc_calibration/vmzero/vmzero_pipeline.cu"
+			],
+			[
+				"",
+				"input/ubf_data.h"
+			],
+			[
+				"params.h",
+				"oc_calibration/params.h"
+			],
+			[
+				"robus",
+				"oc_calibration/robust_online_trend_cycle.cu"
+			],
+			[
+				"timers.h",
+				"oc_calibration/timers.h"
+			],
+			[
+				"oc",
+				"oc_calibration/oc_calibration.h"
+			],
+			[
+				"oc_calibration.cu",
+				"oc_calibration/oc_calibration.cu"
+			],
+			[
+				"robust_on",
+				"oc_calibration/robust_online_trend_cycle.cu"
+			],
+			[
+				"cycle_sample_median.cu",
+				"unit-tests/cycle_sample_median.cu"
+			],
+			[
+				"cycle_median.cu",
+				"unit-tests/cycle_median.cu"
+			],
+			[
+				"allocation.h",
+				"modules/lift/lift/memory/allocation.h"
+			],
+			[
+				"parallel.h",
+				"modules/lift/lift/parallel.h"
+			],
+			[
+				"sample_lo",
+				"primitives/sample_loader.h"
+			],
+			[
+				"cycle",
+				"primitives/cycle_median.h"
+			],
+			[
+				"small_medi",
+				"primitives/small_median.h"
+			],
+			[
+				"cell_mean.h",
+				"primitives/cell_mean.h"
+			],
+			[
+				"sample_loader.h",
+				"primitives/sample_loader.h"
+			],
+			[
+				"rail",
+				"oc_calibration/rails_fraction.cu"
+			],
+			[
+				"pipeline.cu",
+				"pipeline.cu"
+			],
+			[
+				"vmzer",
+				"oc_calibration/vmzero/vmzero_pipeline.cu"
+			],
+			[
+				"vmz",
+				"oc_calibration/vmzero/vmzero_pipeline.cu"
+			],
+			[
+				"pipeilne.h",
+				"pipeline.h"
+			],
+			[
+				"ubf_da",
+				"input/ubf_data.h"
+			],
+			[
+				"oc_ca",
+				"oc_calibration/oc_calibration.cu"
+			],
+			[
+				"pipeline",
+				"pipeline.h"
+			],
+			[
+				"ro",
+				"oc_calibration/robust_online_trend_cycle.cu"
+			],
+			[
+				"ubf_data",
+				"input/ubf_data.h"
+			],
+			[
+				"robust",
+				"oc_calibration/robust_online_trend_cycle.cu"
+			],
+			[
+				"deco",
+				"modules/lift/lift/decorators.h"
+			],
+			[
+				"harness.h",
+				"modules/lift/lift/tests/harness.h"
+			],
+			[
+				"harness",
+				"modules/lift/lift/tests/harness.h"
+			],
+			[
+				"good_pore",
+				"oc_calibration/good_pore_detector.cu"
+			],
+			[
+				"sort-bench",
+				"unit-tests/sort-benchmark.cu"
+			],
+			[
+				"snail.cu",
+				"snail.cu"
+			],
+			[
+				"cmakeli",
+				"CMakeLists.txt"
+			],
+			[
+				"fast",
+				"oc_calibration/fast_fit_trend_cycle.cu"
+			],
+			[
+				"fast_robu",
+				"oc_calibration/fast_robust_fit_trend_cycle.cu"
+			],
+			[
+				"fast_fi",
+				"oc_calibration/fast_fit_trend_cycle.cu"
+			],
+			[
+				"timer.h",
+				"modules/lift/timer.h"
+			],
+			[
+				"cuda_",
+				"modules/lift/memory/cuda_allocator.h"
+			],
+			[
+				"cuda_a",
+				"modules/lift/memory/cuda_allocator.h"
+			],
+			[
+				"para",
+				"oc_calibration/params.h"
+			],
+			[
+				"ubf_file.h",
+				"input/ubf_file.h"
+			],
+			[
+				"pipelien.h",
+				"pipeline.h"
+			],
+			[
+				"pipelien.cu",
+				"pipeline.cu"
+			],
+			[
+				"fast_fit",
+				"oc_calibration/fast_fit_trend_cycle.h"
+			],
+			[
+				"cell_",
+				"primitives/cell_mean.h"
+			],
+			[
+				"increm",
+				"primitives/incremental_cycle_mean.h"
+			],
+			[
+				"fast_fit_tre",
+				"oc_calibration/fast_fit_trend_cycle.h"
+			],
+			[
+				"anno",
+				"output/annotations_writer.h"
+			],
+			[
+				"snail",
+				"snail.cu"
+			],
+			[
+				"pipelin",
+				"pipeline.cu"
+			],
+			[
+				"oc_calib",
+				"oc_calibration/oc_calibration.cu"
+			],
+			[
+				"rails_fraction.cu",
+				"oc_calibration/rails_fraction.cu"
+			],
+			[
+				"vmzero_pipeline.cu",
+				"oc_calibration/vmzero/vmzero_pipeline.cu"
+			],
+			[
+				"persis",
+				"modules/lift/memory/persistent_allocation.h"
+			],
+			[
+				"oc_calbration.h",
+				"oc_calibration/oc_calibration.h"
+			],
+			[
+				"rails",
+				"oc_calibration/rails_fraction.cu"
+			],
+			[
+				"good",
+				"oc_calibration/good_pore_detector.cu"
+			],
+			[
+				"fast_",
+				"oc_calibration/old/fast_fit_trend_cycle.cu"
+			],
+			[
+				"oversho",
+				"oc_calibration/overshoot.cu"
+			],
+			[
+				"trend_cycle_decay",
+				"oc_calibration/old/trend_cycle_decay.cu"
+			],
+			[
+				"pos_neg_",
+				"oc_calibration/old/pos_neg_oc.cu"
+			],
+			[
+				"overshoot.cu",
+				"oc_calibration/old/overshoot.cu"
+			],
+			[
+				"fast_fit_trend_cycle.h",
+				"oc_calibration/fast_fit_trend_cycle.h"
+			],
+			[
+				"ubf_dat",
+				"input/ubf_data.h"
+			],
+			[
+				"subtr",
+				"primitives/subtract_frame.h"
+			],
+			[
+				"fast_f",
+				"oc_calibration/fast_fit_trend_cycle.h"
+			],
+			[
+				"pos_median.cu",
+				"oc_calibration/old/pos_median.cu"
+			],
+			[
+				"ubf_file_set.cu",
+				"input/ubf_file_set.cu"
+			],
+			[
+				"ubf_file.cu",
+				"input/ubf_file.cu"
+			],
+			[
+				"file_set.",
+				"input/ubf_file_set.cu"
+			],
+			[
+				"vmzero_pi",
+				"oc_calibration/vmzero/vmzero_pipeline.h"
+			],
+			[
+				"scoped_free.h",
+				"modules/lift/memory/scoped_free.h"
+			],
+			[
+				"fas",
+				"oc_calibration/fast_fit_trend_cycle.h"
+			],
+			[
+				"ubf_file_set.h",
+				"input/ubf_file_set.h"
+			],
+			[
+				"vm",
+				"oc_calibration/vmzero/vmzero_pipeline.h"
+			],
+			[
+				"filter",
+				"input/filter_first_cycle_sample.cu"
+			],
+			[
+				"filter_f",
+				"input/filter_first_cycle_sample.cu"
+			],
+			[
+				"o",
+				"oc_calibration/oc_calibration.cu"
+			],
+			[
+				"filter_fir",
+				"input/filter_first_cycle_sample.cu"
+			],
+			[
+				"pi",
+				"pipeline.cu"
+			],
+			[
+				"vmzero_pipeline.h",
+				"oc_calibration/vmzero/vmzero_pipeline.h"
+			],
+			[
+				"vmero",
+				"oc_calibration/vmzero/vmzero_pipeline.h"
+			],
+			[
+				"sample_laoder.h",
+				"primitives/sample_loader.h"
+			],
+			[
+				"incremental",
+				"primitives/incremental_cell_mean.h"
+			],
+			[
+				"increme",
+				"primitives/incremental_cell_mean.h"
+			],
+			[
+				"incrementa",
+				"primitives/incremental_cell_mean.h"
+			],
+			[
+				"incremen",
+				"primitives/incremental_cell_mean.h"
+			],
+			[
+				"vmzero_pip",
+				"oc_calibration/vmzero/vmzero_pipeline.h"
+			],
+			[
+				"ubf_100.h",
+				"modules/ubf/ubf_100.h"
+			],
+			[
+				"vmze",
+				"oc_calibration/vmzero/vmzero_pipeline.h"
+			],
+			[
+				"pipeline.uc",
+				"pipeline.cu"
+			],
+			[
+				"vmzero_pipe",
+				"oc_calibration/vmzero/vmzero_pipeline.h"
+			],
+			[
+				"remap",
+				"input/remap_raw_frame_data.cu"
+			],
+			[
+				"incre",
+				"primitives/incremental_cell_mean.h"
+			],
+			[
+				"increment",
+				"primitives/incremental_cell_mean.h"
+			],
+			[
+				"remap_raw",
+				"input/remap_raw_frame_data.cu"
+			],
+			[
+				"oc_calibrat",
+				"oc_calibration/oc_calibration.cu"
+			],
+			[
+				"ubf_file",
+				"input/ubf_file_set.h"
+			],
+			[
+				"snail.cpp",
+				"snail.cpp"
+			],
+			[
+				"cmakelist",
+				"CMakeLists.txt"
+			],
+			[
+				"sample_loader",
+				"primitives/sample_loader.h"
+			],
+			[
+				"sample_loa",
+				"primitives/sample_loader.h"
+			],
+			[
+				"in",
+				"primitives/incremental_cell_mean.h"
+			],
+			[
+				"cell_mean.inl",
+				"primitives/cell_mean.inl"
+			],
+			[
+				"ubf_file_",
+				"input/ubf_file_set.h"
+			],
+			[
+				"pos_med",
+				"oc_calibration/pos_median.cu"
+			],
+			[
+				"good_po",
+				"oc_calibration/good_pore_detector.cu"
+			],
+			[
+				"ubf_100.cpp",
+				"modules/ubf/ubf_100.cpp"
+			],
+			[
+				"ubf_stream.h",
+				"modules/ubf/ubf_stream.h"
+			],
+			[
+				"ubf_stream.cpp",
+				"modules/ubf/ubf_stream.cpp"
+			],
+			[
+				"pos_neg_oc",
+				"oc_calibration/pos_neg_oc.cu"
+			],
+			[
+				"good_pore_dete",
+				"oc_calibration/good_pore_detector.cu"
+			],
+			[
+				"ubf_data.cu",
+				"input/ubf_data.cu"
+			],
+			[
+				"remap_",
+				"input/remap_raw_frame_data.cu"
+			],
+			[
+				"ubf_strea",
+				"modules/ubf/ubf_stream.cpp"
+			],
+			[
+				"stream.cpp",
+				"modules/ubf/ubf_stream.cpp"
+			],
+			[
+				"trend_cyc",
+				"oc_calibration/trend_cycle_decay.cu"
+			],
+			[
+				"snail.c",
+				"snail.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/firepony/firepony.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"measure_cy",
+				"measure_cycle"
+			],
+			[
+				"mem",
+				"ubf_mem_block"
+			],
+			[
+				"load_ubf",
+				"load_ubf_file"
+			],
+			[
+				"load_ub",
+				"load_ubf_file"
+			],
+			[
+				"load_u",
+				"load_ubf_file"
+			]
+		],
+		"width": 647.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
