@@ -19,5 +19,10 @@ add_custom_command(OUTPUT shader_map.gen.cpp
                    WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
                    DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/shadergen.py ${shader_files})
 
-add_executable(sdftoy main.cpp ${CMAKE_CURRENT_BINARY_DIR}/shader_map.gen.cpp gen-glad/src/glad.c)
+add_executable(sdftoy
+               main.cpp
+               shaders.cpp
+               ${CMAKE_CURRENT_BINARY_DIR}/shader_map.gen.cpp
+               gen-glad/src/glad.c)
+
 target_link_libraries(sdftoy ${link_libs})

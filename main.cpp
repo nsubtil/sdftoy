@@ -9,7 +9,7 @@
 #include <map>
 #include <vector>
 
-extern std::map<std::string, std::string> shader_map;
+#include "shaders.h"
 
 void error_callback(int error, const char *description)
 {
@@ -27,85 +27,8 @@ void check_gl_errors(void)
     }
 }
 
-void show_shader_log(GLuint object)
-{
-    GLint log_len;
-    std::vector<char> log;
-
-    glGetShaderiv(object, GL_INFO_LOG_LENGTH, &log_len);
-    log.resize(log_len);
-    glGetShaderInfoLog(object, log_len, nullptr, log.data());
-    printf("%s\n", log.data());
-}
-
-void show_program_log(GLuint object)
-{
-    GLint log_len;
-    std::vector<char> log;
-
-    glGetProgramiv(object, GL_INFO_LOG_LENGTH, &log_len);
-    log.resize(log_len);
-    glGetProgramInfoLog(object, log_len, nullptr, log.data());
-    printf("%s\n", log.data());
-}
-
-void compile_shader(GLuint shader, const char *name)
-{
-    const GLchar *src = shader_map[name].c_str();
-
-    glShaderSource(shader, 1, &src, NULL);
-    glCompileShader(shader);
-    check_gl_errors();
-
-    GLint ret;
-    glGetShaderiv(shader, GL_COMPILE_STATUS, &ret);
-    if(!ret)
-    {
-        printf("failed to compile %s:\n", name);
-        show_shader_log(shader);
-    }
-
-    check_gl_errors();
-}
-
-GLuint vert_shader, frag_shader, program;
-GLuint vert_shader_input_position;
-GLuint uniform_screen_resolution_location;
-
-void setup_shader(const char *vertex_name, const char *frag_name)
-{
-    vert_shader = glCreateShader(GL_VERTEX_SHADER);
-    compile_shader(vert_shader, vertex_name);
-
-    frag_shader = glCreateShader(GL_FRAGMENT_SHADER);
-    compile_shader(frag_shader, frag_name);
-
-    program = glCreateProgram();
-    glAttachShader(program, vert_shader);
-    glAttachShader(program, frag_shader);
-    glLinkProgram(program);
-
-    check_gl_errors();
-
-    GLint ret;
-    glGetProgramiv(program, GL_LINK_STATUS, &ret);
-    if(!ret)
-    {
-        printf("failed to link %s + %s\n", vertex_name, frag_name);
-        show_program_log(program);
-    }
-
-    check_gl_errors();
-
-    glUseProgram(program);
-
-    vert_shader_input_position = glGetAttribLocation(program, "position");
-    uniform_screen_resolution_location = glGetUniformLocation(program, "screen_resolution");
-
-    check_gl_errors();
-}
-
 GLuint vertex_buffer, index_buffer, vao;
+glsl_program program;
 
 void init(void)
 {
@@ -131,21 +54,30 @@ void init(void)
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, index_buffer);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(index_buffer_data), index_buffer_data, GL_STATIC_DRAW);
 
-    setup_shader("vertex/passthrough", "fragment/screen_uv_color");
+    // setup_shader("vertex/passthrough", "fragment/screen_uv_color");
+
+    bool ret;
+    ret = create_program(program, { "vertex/passthrough" }, { "fragment/screen_uv_color" });
+    if (ret == false)
+    {
+        exit(1);
+    }
+
+    glUseProgram(program.program);
 
     check_gl_errors();
 
     glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
-    glVertexAttribPointer(0,       // shader attribute
-                          2,                                // number of components per attribute
-                          GL_FLOAT,                         // data type
-                          GL_FALSE,                         // normalized?
-                          sizeof(GLfloat) * 2,              // vertex stride
-                          (void *) 0                        // offset into the array buffer
+    glVertexAttribPointer(program.attributes["position"].index,   // shader attribute
+                          2,                                      // number of components per attribute
+                          GL_FLOAT,                               // data type
+                          GL_FALSE,                               // normalized?
+                          sizeof(GLfloat) * 2,                    // vertex stride
+                          (void *) 0                              // offset into the array buffer
                           );
     check_gl_errors();
 
-    glEnableVertexAttribArray(0);
+    glEnableVertexAttribArray(program.attributes["position"].index);
     check_gl_errors();
 }
 
@@ -156,7 +88,7 @@ void render(int width, int height)
     glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    glUniform2f(uniform_screen_resolution_location, float(width), float(height));
+    glUniform2f(program.uniforms["screen_resolution"], float(width), float(height));
     glDrawElements(GL_TRIANGLE_STRIP,
                    4,
                    GL_UNSIGNED_SHORT,
