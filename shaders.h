@@ -17,37 +17,55 @@ struct glsl_program
     std::vector<std::string> vertex_shader_names;
     std::vector<std::string> fragment_shader_names;
 
-    std::vector<GLuint> vertex_shaders;
-    std::vector<GLuint> fragment_shaders;
+    GLuint vertex_shader;
+    GLuint fragment_shader;
 
     std::map<std::string, GLuint> uniforms;
     std::map<std::string, glsl_attribute> attributes;
 
     GLuint program;
 
+    glsl_program()
+        : vertex_shader(GLuint(-1)),
+          fragment_shader(GLuint(-1)),
+          program(GLuint(-1))
+    { }
+
+    bool has_uniform(const std::string name)
+    {
+        return uniforms.find(name) != uniforms.end();
+    }
+
+    bool has_attribute(const std::string name)
+    {
+        return attributes.find(name) != attributes.end();
+    }
+
     void clear(void)
     {
         vertex_shader_names.clear();
         fragment_shader_names.clear();
 
-        for(auto i : vertex_shaders)
+        if (vertex_shader != GLuint(-1))
         {
-            glDeleteShader(i);
+            glDeleteShader(vertex_shader);
+            vertex_shader = GLuint(-1);
         }
 
-        vertex_shaders.clear();
-
-        for(auto i : fragment_shaders)
+        if (fragment_shader != GLuint(-1))
         {
-            glDeleteShader(i);
+            glDeleteShader(fragment_shader);
+            fragment_shader = GLuint(-1);
         }
-
-        fragment_shaders.clear();
 
         uniforms.clear();
         attributes.clear();
 
-        glDeleteProgram(program);
+        if (program != GLuint(-1))
+        {
+            glDeleteProgram(program);
+            program = GLuint(-1);
+        }
     }
 };
 

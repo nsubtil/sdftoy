@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -25,21 +27,46 @@ static void show_program_log(GLuint object)
     printf("%s\n", log.data());
 }
 
-static GLuint compile_shader(GLenum type, const std::string& name)
+static GLuint compile_shader(GLenum type, const std::vector<std::string>& names)
 {
-    const GLchar *src = shader_map[name].c_str();
+    const GLchar *src[names.size()];
+
+    for(size_t i = 0; i < names.size(); i++)
+    {
+        if (shader_map.find(names[i]) == shader_map.end())
+        {
+            printf("couldn't find shader %s\n", names[i].c_str());
+            exit(-1);
+        }
+
+        src[i] = shader_map[names[i]].c_str();
+    }
+
     GLuint shader;
 
+    check_gl_errors();
+
     shader = glCreateShader(type);
-    glShaderSource(shader, 1, &src, NULL);
+    check_gl_errors();
+
+    glShaderSource(shader, names.size(), src, nullptr);
+    check_gl_errors();
+
     glCompileShader(shader);
     check_gl_errors();
 
     GLint ret;
     glGetShaderiv(shader, GL_COMPILE_STATUS, &ret);
+    check_gl_errors();
+
     if(!ret)
     {
-        printf("failed to compile %s:\n", name.c_str());
+        printf("failed to compile { ");
+        for(auto name : names)
+        {
+            printf("%s, ", name.c_str());
+        }
+        printf(" }:\n");
         show_shader_log(shader);
 
         return GLuint(-1);
@@ -56,43 +83,27 @@ bool create_program(glsl_program& output,
 {
     output.clear();
 
-    for(const auto& v : vertex_shaders)
+    output.vertex_shader = compile_shader(GL_VERTEX_SHADER, vertex_shaders);
+    if (output.vertex_shader == GLuint(-1))
     {
-        output.vertex_shader_names.push_back(v);
-
-        GLuint shader = compile_shader(GL_VERTEX_SHADER, v.c_str());
-        if (shader == GLuint(-1))
-        {
-            return false;
-        }
-
-        output.vertex_shaders.push_back(shader);
+        return false;
     }
 
-    for(const auto& f : fragment_shaders)
+    check_gl_errors();
+
+    output.fragment_shader = compile_shader(GL_FRAGMENT_SHADER, fragment_shaders);
+    if (output.fragment_shader == GLuint(-1))
     {
-        output.fragment_shader_names.push_back(f);
-
-        GLuint shader = compile_shader(GL_FRAGMENT_SHADER, f.c_str());
-        if (shader == GLuint(-1))
-        {
-            return false;
-        }
-
-        output.fragment_shaders.push_back(shader);
+        return false;
     }
+
+    check_gl_errors();
 
     output.program = glCreateProgram();
-
-    for(const auto& v : output.vertex_shaders)
-    {
-        glAttachShader(output.program, v);
-    }
-
-    for(const auto& f : output.fragment_shaders)
-    {
-        glAttachShader(output.program, f);
-    }
+    glAttachShader(output.program, output.vertex_shader);
+    check_gl_errors();
+    glAttachShader(output.program, output.fragment_shader);
+    check_gl_errors();
 
     glLinkProgram(output.program);
     check_gl_errors();

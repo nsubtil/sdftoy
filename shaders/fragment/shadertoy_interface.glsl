@@ -1,7 +1,6 @@
 #version 400
 
 // note: z == 1 in iResolution
-
 uniform vec3      iResolution;           // viewport resolution (in pixels)
 uniform float     iGlobalTime;           // shader playback time (in seconds)
 uniform float     iTimeDelta;            // render time (in seconds)
@@ -13,13 +12,9 @@ uniform vec4      iMouse;                // mouse pixel coords. xy: current (if 
 // uniform vec4      iDate;                 // (year, month, day, time in seconds)
 // uniform float     iSampleRate;           // sound sample rate (i.e., 44100)
 
-out vec4 __output_color;
+void mainImage(out vec4 fragColor, in vec2 fragCoord);
 
-void mainImage( out vec4 fragColor, in vec2 fragCoord )
-{
-    vec2 uv = fragCoord.xy / iResolution.xy;
-    fragColor = vec4(uv,0.5+0.5*sin(iGlobalTime),1.0);
-}
+out vec4 __output_color;
 
 void main(void)
 {
