@@ -86,6 +86,7 @@ void glsl_update(void)
                          },
                          {
                            "fragment/shadertoy_interface",
+                           "lib/hg_sdf",
                            "external_shader",
                          });
     if (ret == false)

@@ -28,6 +28,7 @@ for root, dirnames, filenames in os.walk(directory):
 
         fp = open(root + "/" + fname)
         for line in fp:
+            line = line.replace("\\", "\\\\").replace("\"", "\\\"")
             print '        "%s\\n"' % (line.rstrip())
 
         print "    }, "
